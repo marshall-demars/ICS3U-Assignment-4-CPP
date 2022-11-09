@@ -25,7 +25,7 @@ int main() {
         integerOneAsInt = std::stoi(integerOneAsString);
         integerTwoAsInt = std::stoi(integerTwoAsString);
 
-        if (integerOneAsInt || integerTwoAsInt < 0) {
+        if (integerOneAsInt < 0 || integerTwoAsInt < 0) {
             std::cout << "Please only input positive numbers." << std::endl;
         } else if (integerOneAsInt > integerTwoAsInt) {
             std::cout << integerOneAsInt << " is a larger number than "
